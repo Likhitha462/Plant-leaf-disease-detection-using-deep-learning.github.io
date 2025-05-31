@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="static/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stylish&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/master.css" />
+
+    <title>Plant Leaf Disease Detection</title>
+
+    <style media="screen">
+      .heading {
+        font-size: 40px;
+        text-align: center;
+        font-family: "Stylish", sans-serif;
+        color: #5f8d4e;
+        margin-top: 40px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: #a4be7b;
+      }
+
+      .container-1 {
+        margin-top: 50px;
+        background-color: #eff5f5;
+        width: 20%;
+        margin: auto;
+      }
+
+      .avatar {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: auto;
+      }
+
+      .login-container {
+        background-color: #eff5f5;
+        text-align: left;
+        margin: auto;
+        width: 60%;
+        height: 300px;
+        padding-left: 30px;
+        padding-top: 15px;
+      }
+
+      a:link {
+        background-color: #ff0063;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px;
+      }
+
+      a:visited,
+      a:hover,
+      a:active {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="heading">
+      PLANT LEAF DISEASE PREDICTION AND PESTICIDE RECOMMENDATION
+    </h1>
+
+    <div class="container-1">
+      <p
+        style="
+          font-size: 40px;
+          text-align: center;
+          font-family: 'Fredoka One', cursive;
+          color: #aa8b56;
+        "
+      >
+        Login Form
+      </p>
+    </div>
+
+    <img src="static/avatar.png" alt="User-Image" class="avatar" />
+
+    <form method="GET" action="/signin">
+      <div class="login-container">
+        <label
+          style="
+            font-size: 20px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            color: #7f669d;
+          "
+          >Username</label
+        ><br />
+        <input
+          type="text"
+          style="height: 25px; width: 90%; margin-bottom: 20px"
+          placeholder="Type your username here"
+          name="username"
+          id="username"
+          required
+        />
+
+        <label
+          style="
+            font-size: 20px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            color: #7f669d;
+          "
+          >Password</label
+        ><br />
+        <input
+          type="password"
+          style="height: 25px; width: 90%; margin-bottom: 20px"
+          placeholder="Type your password here"
+          name="psw"
+          required
+        /><br />
+
+        <button
+          type="submit"
+          style="
+            height: 35px;
+            width: 91%;
+            margin-bottom: 10px;
+            color: #ffffff;
+            background-color: #4caf50;
+            border: 0px;
+          "
+        >
+          Login</button
+        ><br />
+
+        <label
+          ><input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="height: 15px; width: 15px"
+          />Remember me</label
+        >
+
+        <p>
+          Create a new account? Click
+          <a href="{{url_for('register')}}">Sign Up</a>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>

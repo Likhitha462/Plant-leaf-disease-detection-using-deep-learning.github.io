@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="static/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <title>Plant Leaf Disease Detection</title>
+
+  <style media="screen">
+    .heading {
+      font-size: 40px;
+      text-align: center;
+      font-family: 'Stylish', sans-serif;
+      color: #5F8D4E;
+      margin-top: 40px;
+      font-weight: bold;
+      text-decoration: underline;
+      text-decoration-color: #A4BE7B;
+    }
+
+    .container-1 {
+      margin-top: 50px;
+      background-color: #EFF5F5;
+      width: 20%;
+      margin: auto;
+    }
+
+    .upload-container {
+      background-color: #EFF5F5;
+      text-align: left;
+      width: 60%;
+      height: 300px;
+      padding-left: 30px;
+      padding-top: 24px;
+      margin: auto;
+    }
+
+    .upload {
+      display: block;
+      width: 40%;
+      border-radius: 20px;
+      font-size: 20px;
+      background-color: rgb(255, 252, 252);
+      border: 3px solid #7F669D;
+      margin: auto;
+    }
+
+    ::-webkit-file-upload-button {
+      color: white;
+      border-radius: 20px;
+      padding: 25px;
+      border: 2px solid rgb(129, 129, 129);
+      background-color: rgb(129, 129, 129);
+    }
+
+    ::-webkit-file-upload-button:hover {
+      border-radius: 25px;
+      border: 2px solid #EB6440;
+    }
+
+    .predict {
+      display: block;
+      height: 35px;
+      width: 20%;
+      color: #FFFFFF;
+      background-color: #3C4048;
+      border: 0px;
+      margin: 5px auto 10px;
+      border-radius: 20px;
+    }
+
+    a:link {
+    background-color: #FF0063;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    }
+
+    a:visited, a:hover, a:active {
+      color: #FFFFFF;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1 class="heading">PLANT LEAF DISEASE PREDICTION AND PESTICIDE RECOMMENDATION</h1>
+
+  <div class="container-1">
+    <p style="font-size: 40px; text-align: center; font-family: 'Fredoka One', cursive; color: #AA8B56;">Upload Image</p>
+  </div>
+
+  <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+
+    <div class="upload-container">
+
+      <input type="file" name="image" class="upload"><br>
+      <input class="predict" type="submit" value="Predict"><br><br><br><br><br>
+
+      <a href="/login">Home</a>
+
+    </div>
+
+  </form>
+
+</body>
+
+</html>

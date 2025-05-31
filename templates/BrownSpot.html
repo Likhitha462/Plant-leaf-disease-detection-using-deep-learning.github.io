@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="icon" href="static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+
+    <title>Plant Leaf Disease Detection</title>
+
+    <style media="screen">
+      .heading {
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Stylish', sans-serif;
+        color: #5F8D4E;
+        margin-top: 40px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: #A4BE7B;
+      }
+
+      .container-1 {
+        margin-top: 50px;
+        background-color: #EFF5F5;
+        width: 30%;
+        margin: auto;
+      }
+
+      .disease-img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 10px auto 20px;
+        border-radius: 50%;
+      }
+
+      .disease-container {
+        margin: auto;
+        background-color: #EFF5F5;
+        text-align: left;
+        width: 80%;
+        height: 850px;
+        padding-left: 30px;
+        padding-top: 15px;
+      }
+
+      a:link {
+      background-color: #FF0063;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px;
+      width: 80px;
+      }
+
+      a:visited, a:hover, a:active {
+        color: #FFFFFF;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1 class="heading">PLANT LEAF DISEASE PREDICTION AND PESTICIDE RECOMMENDATION</h1>
+
+    <div class="container-1">
+      <p style="font-size: 40px; text-align: center; font-family: 'Fredoka One', cursive; color: #AA8B56;">Disease Information</p>
+    </div>
+
+    <img src="../static/Brown_Spot_Rice.png" class="disease-img" alt="BS-image">
+
+    <div id="intro" class="disease-container">
+
+      <h2 style="font-size: 30px; font-family: 'Lora', serif; color: #E0144C; font-weight: bold; margin-bottom: 0px;"><u>Disease Type</u></h2>
+      <p style="font-size: 30px; font-family: 'Sansita', sans-serif; margin-top: 0px;">Brown Spot</p>
+
+      <h2 style="font-size: 30px; font-family: 'Lora', serif; color: #E0144C; font-weight: bold; margin-bottom: 0px;"><u>Symptoms</u></h2>
+      <ul style="font-size: 30px; font-family: 'Sansita', sans-serif; margin-top: 0px;">
+        <li>Symptoms start as dark brown, irregular spots on both upper and lower leaf surfaces.</li>
+        <li>Lesions typically will have a yellow or chlorotic halo when held up to a back light. Adjacent lesions frequently merge to form irregularly shaped blotches.</li>
+        <li>Leaves become yellow to rusty brown. Symptoms of Brown Spot can also develop on stems and pods of plants approaching maturity.</li>
+        <li>Stem and pod lesions have indefinite margins, are dark in appearance and range in size from flecks to larger areas.</li>
+      </ul>
+
+      <h2 style="font-size: 30px; font-family: 'Lora', serif; color: #E0144C; font-weight: bold; margin-bottom: 0px;"><u>Management</u></h2>
+      <ul style="font-size: 30px; font-family: 'Sansita', sans-serif; margin-top: 0px;">
+        <li>The onset of Brown Spot symptoms is influenced by the relative maturity of the soybean variety, and symptoms appear earlier in the season on an early-maturing variety.</li>
+        <li>Varieties vary in their susceptibility to this disease, but resistance has not been identified.</li>
+        <li>Brown Spot is more severe in continuously cropped soybean fields.</li>
+        <li>Reduced tillage systems will tend to have more brown spot as the pathogen overwinters in residue.</li>
+        <li>Application of fungicides to manage brown spot in Nebraska is typically not warranted with most varieties.</li>
+      </ul>
+
+      <a href="/login">Home</a>
+      <a href="/index">Predict</a>
+
+		</div>
+
+  </body>
+
+</html>
